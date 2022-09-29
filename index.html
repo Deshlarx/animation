@@ -12,7 +12,7 @@
             padding: 0;
         }
         body{
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: black;
             display: flex;
             align-items: center;
             height: 100vh;
@@ -77,18 +77,26 @@
             border-radius: 100%;
             border-top-color:green ;
             border-bottom-color:green ;
-            animation: spinner 2s 0s ease-in-out forwards;
+            animation: spinner 2s 0s ease-in-out infinite;
         }
 
         @keyframes spinner {
             0%{
                 transform: rotateZ(0deg);
             }
+            25%{
+                opacity: .5;
+                transform: rotateZ(360deg);
+            }
+            50%{
+                transform: rotateZ(360deg);
+            }
             75%{
                 transform: rotateZ(360deg);
             }
             100%{
-                opacity: 0;
+                opacity: .5;
+                transform: rotateZ(360deg);
             }
         }
     </style>
