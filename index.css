@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+/* div{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count:3;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    position: relative;
+}
+
+@keyframes move {
+    from{
+        background-color: seagreen;
+    }
+    to{
+        background-color: dodgerblue;
+    }
+
+    0%{
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: gray;
+        transform: rotate(360deg);
+        left: 200px;
+        top: 0;
+    }
+    50%{
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: lime;
+        left: 0;
+        top: 200px;
+    }
+    100%{
+        background-color: yellow;
+        left: 0;
+        top: 0;
+    }
+} */
+
+div{
+    width: 50px;
+    height: 50px;
+    border-color:white;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 100%;
+    border-top-color:green ;
+    border-bottom-color:green ;
+    animation: spinner 2s 0s ease-in-out infinite;
+}
+
+@keyframes spinner {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    25%{
+        opacity: .5;
+        transform: rotateZ(360deg);
+    }
+    50%{
+        transform: rotateZ(360deg);
+    }
+    75%{
+        transform: rotateZ(360deg);
+    }
+    100%{
+        opacity: .5;
+        transform: rotateZ(360deg);
+    }
+}
